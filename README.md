@@ -9,8 +9,8 @@ Incase you are too lazy to make an account and just want to check out the featur
 Email: 
 Password: 
 
-# Backend Code
-The backend code for CodePred is available at  https://github.com/vinaydahiya04/codepred-backend
+# Frontend Code
+The frontend code for CodePred is available at  https://github.com/vinaydahiya04/CodePred_Frontend
 
 # Aim/Inspiration
 The idea behind this recommendation system was to save the enormous amounts of time coders spend on finding the right problems to solve on codeforces.
@@ -62,12 +62,9 @@ After getting the rating values of which the user should solve questions for the
 
 # Tech Stack
 The following libraries/ frameworks were used for the frontend developement of this website:
-* React
-* MongoDB
-* ExpressJS
 * NodeJS
-* CSS
-* Redux
+* ExpressJS
+* MongoDB
 
 # Features and their implementation
 ### The following packages were used for the given features
