@@ -5,6 +5,9 @@ var tags = ["dp", "binary search", "graphs", "greedy", "math", "trees", "strings
 var solved_dict;
 const sendPredictions = (req, res) => {
     try {
+        
+
+        
         //let handle = req.params.handle
         let handle = req.query.handle
         
@@ -17,6 +20,8 @@ const sendPredictions = (req, res) => {
             pred = r[0];
 
             solved_dict = r[1]
+
+            
 
 
             if (r[0].length == 0) {
@@ -41,6 +46,8 @@ const sendPredictions = (req, res) => {
                     message: "Sorry! But currently this predictor works only for people ranked less than international master, PS at your rank the ai needs your expertise more than you need the ai"
                 })
             }
+
+            
 
             ques_pred = quesPred(pred, solved_dict)
 
@@ -71,7 +78,7 @@ const sendPredictions = (req, res) => {
 
 
     } catch (error) {
-        console.log(error)
+        
         return res.status(404).json({
             flag: 0,
             message: "Internal Server Error"
@@ -85,14 +92,14 @@ const sendData = (req, res) => {
         //let handle = req.params.handle
         let handle = req.query.handle
         
-
+        
         let pred;
 
         let ques_pred;
 
         initi(handle).then(r => {
             pred = r;
-
+            
             if (r.length == 0) {
                 
 
@@ -121,7 +128,7 @@ const sendData = (req, res) => {
             let ques_dict = {};
 
             for (let i = 0; i < 9; i++) {
-                let x = pred[i];
+                let x = r[0][i];
 
                 if (x % 100 >= 30) {
                     let y = 100 - x % 100;
@@ -160,7 +167,7 @@ const sendData = (req, res) => {
 
 
     } catch (error) {
-        console.log(error)
+        
         return res.status(404).json({
             flag: 0,
             message: "Internal Server Error"

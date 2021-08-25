@@ -104,10 +104,10 @@ function similarity(personal_list, rank) {
             self_score += personal_list[i] * personal_list[i]
         }
 
-        //let diff = Math.sqrt(self_score) - Math.sqrt(cost)
-        //diff = Math.abs(diff)
-        sim_score /= cost;
-        //sim_score /= diff;
+        let diff = Math.sqrt(self_score) - Math.sqrt(cost)
+        diff = Math.abs(diff)
+        sim_score /= Math.sqrt(cost);
+        sim_score /= diff;
 
 
         similarity_dict[person] = sim_score
