@@ -6,8 +6,8 @@ CodePred suggests you the kind of problems which will be helpful in improving yo
 The website is hosted at https://code-pred.netlify.app/
 You are required to signup using your email id and Codeforces handle to access the recommendation system.
 Incase you are too lazy to make an account and just want to check out the features you can login using the following credentials:
-Email: 
-Password: 
+Email: sample_test@gmail.com    
+Password: Sample#1
 
 # Frontend Code
 The frontend code for CodePred is available at  https://github.com/vinaydahiya04/CodePred_Frontend
